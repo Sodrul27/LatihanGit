@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latihan GitHub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Latihan Git</title>
 </head>
 <body>
-    <h1>Latihan Github</h1>
-    <p>Tingkatkan skill versioningmu disini</p>
-    <button>Daftar</button>
+    <h1>Program Git Camp404</h1>
+    <button onclick="cekProgram()">Cek Program</button>
+    <div id="program" style="visibility: hidden;">
+        <table border="1">
+            <tr>
+                <td>Program</td>
+                <td>Waktu</td>
+                <td>Daftar Program</td>
+            </tr>
+            <tr>
+                <td>GIT Personal Project</td>
+                <td>08 November 2023</td>
+                <td><button>Daftar</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function cekProgram(){
+            document.getElementById("program").style.visibility = "visible"
+        }
+    </script>
 </body>
 </html>
